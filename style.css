@@ -12,11 +12,12 @@ body {
     align-items: center;
     font-family: Marcellus;
 }
+/* setting a fixed size for bigger screen than FHD*/
 .container {
-    width: 80%;
-    height: 70%;
+    width: 1536px;
+    height: 851px;
     display: flex;
-   /* box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.5);*/
+  /* box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.5);*/
 }
 .half 
 {
@@ -109,3 +110,34 @@ h3{
     border-radius: 10px;
     border: 3px groove #ffffff;
   }
+@media only screen and (max-width: 1919px) {
+  .container{
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-flow:  column wrap;
+  align-items: center;
+  
+  }
+  .half_left{
+    width: 50%;
+    margin-bottom: -15%;
+    background-color: transparent;
+    padding: 0 0 0 0;
+    height: 30%;
+  }
+  .half_left:after{
+    padding-bottom: 100%;    
+  }
+  .half_right{
+    padding: 15% 30px 15px 30px;
+    height: 70%;
+    width: 100%;
+  }
+  .img_container {
+    width: 100%;
+    padding :0;
+    margin: 0;
+  }
+
+}
